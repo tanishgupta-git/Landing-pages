@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fitnessgym</title>
+	           <meta name="viewport" content="width=device-width,intial-scale=1.0">
+	                  <link rel="stylesheet" type="text/css" href="fitnessweb.css">
+	                      <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Roboto+Condensed&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="header">
+             <div class="logo"><span>FIT</span>NESS</div>
+                   <div class="toggle"><img src="fitness/toggle.png"></div>
+  </div>
+<div id="main-content">
+  <video id="back-video" autoplay loop muted>
+                   <source src="fitness/bg.mp4" type="video/mp4"> 
+          </video>
+<div id="content">
+          <h1>MORE THAN FITNESS</h1>
+               <p>Physical Fitness is very important in a person’s life. Physically fit people are much more productive & successful in their life, not only that; they hold a lot of health benefits over the people who are not fit.Physical Fitness is not just; how your body looks, how much exercises you can do.
+                 <span class="click-show">
+	                It’s the general health of a person who is physically and mentally fit.People who are physically fit are also healthier, are able to maintain their most optimum weight, and are also not prone to cardiac and other health problems.A person who is fit both physically and mentally is strong enough to face the ups and downs of life, and is not affected by drastic changes if they take place.
+                  </span>
+              </p>
+              <div>
+              <a id="but-more" href="#"><span>READ MORE</span></a>
+            </div>
+      </div>              
+<div id="imagebox">
+       <img src="fitness/man.png">		
+</div>
+     <ul id="follow-icon">
+                          <li><a><img src="fitness/facebook.png"></a></li>
+                                <li><a><img src="fitness/instagram.png"></a></li>
+                                   <li><a><img src="fitness/twitter.png"></a></li>  
+              </ul>	
+</div>
+
+<script>
+	var button = document.querySelector("#but-more");
+       var buttext = document.querySelector("#but-more span");
+           var para  = document.querySelector(".click-show");
+             var click = 0;
+                  button.addEventListener("click" , function()
+                  {
+	                click+=1;
+	                 para.classList.toggle("show");
+	                  if(click%2==0)
+	                     buttext.textContent="READ MORE";
+	                      else 	
+	                             buttext.textContent="SHOW LESS"; 
+                        })	 
+</script>
+</body>
+</html>
