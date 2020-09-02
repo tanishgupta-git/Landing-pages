@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>landingpage</title>
+	       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	              <link rel="stylesheet" type="text/css" href="jokermovielandingpage.css">
+	                   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+      <div>	
+          <a href="#"><img src="jokermovie/logo.png" class="logo"></a>
+      </div>
+            <div>
+                 <img src="jokermovie/toggle.png" class="logo toggle">
+            </div>				
+</div>
+<div class="banner">
+      <div class="content">	
+            <h2>PUT ON HAPPY FACE</h2>
+               <p>Joker is a 2019 American psychological thriller film directed and produced by Todd Phillips, ... He did not believe his idea for a film should cover the Joker, as he thought the character had been depicted in a similar way before, and tried ... Conversely, io9's Germain Lussier said the trailer revealed too little.	
+               </p>
+                     <a href="#" class="play"><img src="jokermovie/play.png">WATCH TRAILER</a>
+                       <div class="poster">
+                            <img src="jokermovie/joker.png" class="joker">	
+                       </div>
+</div>
+<ul class="sci">
+   <li><a><img src="jokermovie/facebook.png"></a></li>
+         <li><a><img src="jokermovie/instagram.png"></a></li>
+                <li><a><img src="jokermovie/twitter.png"></a></li>	
+</ul>
+</div>
+<div  class="trailer">
+          <video controls="true">
+	            <source src="jokermovie/jokertrailer.mp4" type="video/mp4">
+          </video>
+             <img src="jokermovie/close.png" id="close">
+</div>
+</body>
+
+<script>
+	var playbut = document.querySelector(".play");
+	        var windo = document.querySelector(".trailer");
+                   var video = document.querySelector("video")
+	                 var close = document.querySelector("#close");
+	                     playbut.addEventListener("click", function(){
+                             windo.classList.add("action")
+                               video.load();   
+                                 video.play();
+
+		                         })
+	                      close.addEventListener("click" , function(){
+		                     windo.classList.remove("action");
+                               video.pause();
+
+	                                     })
+
+</script>
+</html>
